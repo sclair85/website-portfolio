@@ -53,7 +53,8 @@ button:focus {
     filter: grayscale(0%);
 }
 
-.sites img:hover{
+.sites img:hover,
+.sites img:focus{
     border-color: #6436ec
 }
 
@@ -221,6 +222,7 @@ button {
 
 footer .wrapper {
     background-color: #282828;
+    border: 6px double #230090;
 }
 
 footer a {
@@ -306,8 +308,12 @@ footer a {
     }
 
     .bounce {
-        width: 51%;
+        width: 48%;
         margin: 0 auto;
+    }
+
+    .bounce img {
+        margin-bottom: -.5rem;
     }
 
 }
