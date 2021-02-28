@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+header .container,
+main .container,
+footer .container,
+.branding{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2{
+    margin-bottom: 2rem;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+                    /* ========================================================= */
+                    /* |            H E A D E R        S T Y L E S             | */
+                    /* ========================================================= */
+
+header .wrapper {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #282828;
+    border: 6px double #230090;
+    border-radius: 10px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+}
+
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+.logo a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hero {
+    height: 200px;
+    padding: 7rem 0 10rem 0;
+    background-color: #0C0032;
+}
+
+.branding {
+    width: 100px;
+    background-color: #3500D4;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.branding i {
+    color: #0C0032;
+    font-size: 5rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 4px;
+    text-transform: uppercase; 
+    margin-bottom: 1rem;  
+}
+
+                    /* ========================================================= */
+                    /* |                M A I N        S T Y L E S             | */
+                    /* ========================================================= */
+
+main .wrapper {
+    background-color: #0C0032;
+    color: white;
+}
+
+.divide {
+    border-bottom: 2px solid #1A0061;
+    margin: 2rem 0 5.5rem 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 25px;
+    border: 7px ridge #3500D4;
+    border-radius: 25px;
+    margin-bottom: 1.5rem;
+}
+
+.sites {
+    display: flex;
+    flex-direction: column;
+}
+
+#work {
+    margin-top: 2rem;
+}
+
+.name-plate {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: -.4rem;
+}
+
+.name-plate span {
+    font-size: 2rem;   
+}
+
+.description {
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 175%;
+}
+
+input,
+textarea {
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    border-color: #4316D4;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    resize: none;
+}
+
+input {
+    height: 35px;
+}
+
+textarea {
+    padding-top: 1rem;
+    height: 100px;
+}
+
+::placeholder {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    font-size: .65rem;
+    color: rgb(35, 0, 144, .4);
+    letter-spacing: 3px;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1A0061;
+    padding: 1rem;
+    color: #3600D7;
+    border-color: #4316D4;
+    border-radius: 10px;
+    border-style: ridge;
+    margin-bottom: 2rem;
+}
+
+                    /* ========================================================= */
+                    /* |            F O O T E R        S T Y L E S             | */
+                    /* ========================================================= */
+
+footer .wrapper {
+    background-color: #282828;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+                    /* ========================================================= */
+                    /* |            H E A D E R        S T Y L E S             | */
+                    /* ========================================================= */
+
+    .hero {
+        height: 300px;
+    }
+
+    .branding {
+        width: 125px;
+    }
+
+    .branding i {
+        font-size: 7rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+                    /* ========================================================= */
+                    /* |                M A I N        S T Y L E S             | */
+                    /* ========================================================= */
+
+    .sites {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sites a {
+        flex-basis: 48%;
+    }
+
+    .photo {
+        width: 30%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+    .bounce {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .bounce img {
+        margin-bottom: -.1rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    
+    .sites a {
+        flex-basis: 24%;
+    }
+
+    textarea {
+        height: 300px;
+    }
+
+    .bounce {
+        width: 51%;
+        margin: 0 auto;
+    }
+
+}
