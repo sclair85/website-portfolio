@@ -27,6 +27,37 @@ h3 {
     font-size: 1rem;
 }
 
+.nav-menu a:hover,
+.logo a:hover,
+.nav-menu a:focus,
+.logo a:focus {
+    background-color: rgb(255, 255, 255);
+    color: #1A0061;
+    border-radius: 10px;
+}
+
+button:hover,
+button:focus {
+    background-color: white;
+    color: #230090;
+    cursor: pointer;
+}
+
+.sites:hover > a,
+.sites:focus > a {
+    filter: grayscale(100%);
+}
+
+.sites:hover > a:hover,
+.sites:focus > a:hover {
+    filter: grayscale(0%);
+}
+
+.sites img:hover{
+    border-color: #6436ec
+}
+
+
                     /* ========================================================= */
                     /* |            H E A D E R        S T Y L E S             | */
                     /* ========================================================= */
@@ -54,12 +85,14 @@ nav li {
 .nav-menu a{
     color: white;
     text-decoration: none;
+    font-weight: bold;
     font-size: 1rem;
     padding: .5rem;
 }
 
 .logo a{
     color: white;
+    padding: .5rem;
     font-size: 1.5rem;
 }
 
@@ -200,6 +233,15 @@ footer a {
                     /* ========================================================= */
                     /* |            H E A D E R        S T Y L E S             | */
                     /* ========================================================= */
+
+    .nav-menu a {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .logo a {
+        font-size: 2rem;
+    }
 
     .hero {
         height: 300px;
