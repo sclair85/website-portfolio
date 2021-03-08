@@ -4,316 +4,406 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Orbitron', sans-serif;
-}
-
 header .container,
 main .container,
 footer .container,
-.branding{
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 1rem;
+.hero{
+     margin: 0 auto;
+     padding: 0 2rem 0 2rem;
+     max-width: 1280px;
+ }
+
+body {
+    font-family: Arial;
 }
 
-h2{
-    margin-bottom: 2rem;
+img {
+     width: 100%;
+ }
+
+ p {
+     margin-bottom: 1rem;
+     line-height: 150%;
+ }
+
+                    /* ======================= H O V E R ====================== */
+
+nav a:hover, 
+nav a:focus {
+    background-color: black;
+    color: white;
 }
 
-h3 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.nav-menu a:hover,
-.logo a:hover,
-.nav-menu a:focus,
-.logo a:focus {
-    background-color: rgb(255, 255, 255);
-    color: #1A0061;
-    border-radius: 10px;
-}
-
-button:hover,
-button:focus {
-    background-color: white;
-    color: #230090;
-    cursor: pointer;
-}
-
-.sites:hover > a,
-.sites:focus > a {
+#projects:hover .house-link, 
+#projects:focus-within .house-link {
     filter: grayscale(100%);
 }
 
-.sites:hover > a:hover,
-.sites:focus > a:hover {
+#projects:hover .house-link:hover,
+#projects:focus-within .house-link:focus-within {
     filter: grayscale(0%);
 }
 
-.sites img:hover,
-.sites img:focus{
-    border-color: #6436ec
+.house-link:hover h3,
+.house-link:focus-within h3{
+    background-color: white;
+    color:black;
 }
 
+#about button:hover,
+#about button:focus {
+    color: #EFEFEF;
+    background-color: black;
+}
+
+.send:hover,
+.send:focus {
+    background-color: #EFEFEF;
+    color: black;
+}
 
                     /* ========================================================= */
                     /* |            H E A D E R        S T Y L E S             | */
                     /* ========================================================= */
 
-header .wrapper {
+.top-links li,
+.architects {
+    display: none;
+}
+
+header .container {
     width: 100%;
-    position: fixed;
-    z-index: 1;
-    background-color: #282828;
-    border: 6px double #230090;
-    border-radius: 10px;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
 }
 
 nav {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1rem 0 1.2rem 2.5rem;
+    background-color: white;
+    box-shadow: 0px 3px 6px rgba(31, 31, 31, 0.281);
 }
 
-nav li {
-    display: inline;
-}
-
-.nav-menu a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
+nav a {
     padding: .5rem;
+    border-radius: 10px;
 }
 
 .logo a{
-    color: white;
-    padding: .5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3.55px;
 }
+
+.logo span {
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+                    /* ======================= H E R O ========================= */
 
 .hero {
-    height: 200px;
-    padding: 7rem 0 10rem 0;
-    background-color: #0C0032;
+    width: 100%;
+    height: 148px;
+    margin-top: 3.3rem;
+    background-image: url("images/architect.jpg");
+    background-size: cover;
+    background-position: bottom;
 }
 
-.branding {
-    width: 100px;
-    background-color: #3500D4;
-    border-radius: 15px;
-    opacity: 1;
+.br {
+    opacity: .75;
+    font-weight: bold;
+    font-family: Verdana;
+    padding: .4rem 1rem .6rem 1rem;
+    background-color: black;
 }
 
-.branding i {
-    color: #0C0032;
-    font-size: 5rem;
-}
-
-h1 {
-    text-align: center;
-    font-size: 1.5rem;
+.hero h1 {
+    position: relative;
+    top: 40px;
+    left: 115px;
+    width: 90px;
     color: white;
+    text-align: center;
     letter-spacing: 4px;
-    text-transform: uppercase; 
-    margin-bottom: 1rem;  
+    font-size: 2.2rem;
 }
 
                     /* ========================================================= */
                     /* |                M A I N        S T Y L E S             | */
                     /* ========================================================= */
 
-main .wrapper {
-    background-color: #0C0032;
-    color: white;
+.divider-1 {
+    border-bottom: 1px solid black;
+    margin: 5rem 0 2.5rem 0;
 }
 
-.divide {
-    border-bottom: 2px solid #1A0061;
-    margin: 2rem 0 5.5rem 0;
+.divider {
+    border-bottom: 1px solid black;
+    margin: 4.5rem 0 1rem 0;
 }
 
-img {
-    width: 100%;
-    border-radius: 25px;
-    border: 7px ridge #3500D4;
-    border-radius: 25px;
-    margin-bottom: 1.5rem;
+.divider h2,
+.divider-1 h2 {
+    margin-bottom: 1rem;
 }
 
-.sites {
+
+                    /* =================== P R O J E C T S ===================== */
+
+#projects  {
     display: flex;
     flex-direction: column;
+
 }
 
-#work {
-    margin-top: 2rem;
-}
-
-.name-plate {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: -.4rem;
-}
-
-.name-plate span {
-    font-size: 2rem;   
-}
-
-.description {
-    text-align: center;
-}
-
-p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    line-height: 175%;
-}
-
-input,
-textarea {
-    font-family: 'Press Start 2P', cursive;
-    width: 100%;
-    padding-left: 1rem;
+.house-link {
     margin-bottom: 1rem;
-    border-color: #4316D4;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-    resize: none;
+}
+
+.house-link img {
+    margin-top: -2.4rem;
+}
+
+.house-link a {
+    text-decoration: none;
+}
+
+.house-link h3 {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    padding: .6rem;
+    font-size: 1rem;
+    font-weight: normal;
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+}
+
+                    /* ====================== A B O U T ======================== */
+
+.description p {
+    line-height: 150%;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.profile img {
+    margin-bottom: .5rem;
+    filter: grayscale(75%);
+}
+
+.profile h2 {
+    margin-bottom: 1rem;
+}
+
+.profile h3 {
+    font-size: 1rem;
+    color: rgba(107, 107, 107, 0.801);
+    margin-bottom: 1rem;
+}
+
+.profile button {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    padding: .6rem;
+    margin-bottom: 2rem;
+
+}
+
+                    /* ==================== C O N T A C T ====================== */
+
+#contact p {
+    font-size: 1.1rem;
 }
 
 input {
-    height: 35px;
-}
-
-textarea {
-    padding-top: 1rem;
-    height: 100px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1rem;
+    border-color: rgba(128, 128, 128, 0.418);
+    border-style:solid;
+    border-width: 1px;
 }
 
 ::placeholder {
-    font-family: 'Press Start 2P', cursive;
+    color: rgba(143, 143, 143, 0.808);
+    font-size: 1rem;
+    padding-left: .5rem;
     font-weight: bold;
-    font-size: .65rem;
-    color: rgb(35, 0, 144, .4);
-    letter-spacing: 3px;
 }
 
-button {
-    font-family: 'Press Start 2P', cursive;
-    background-color: #1A0061;
-    padding: 1rem;
-    color: #3600D7;
-    border-color: #4316D4;
-    border-radius: 10px;
-    border-style: ridge;
-    margin-bottom: 2rem;
+.send {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: .7rem 1rem;
+    margin: 1rem 0 3rem 0;
+}
+
+#contact img {
+    margin-bottom: .3rem;
 }
 
                     /* ========================================================= */
                     /* |            F O O T E R        S T Y L E S             | */
                     /* ========================================================= */
 
-footer .wrapper {
-    background-color: #282828;
-    border: 6px double #230090;
+footer .container {
+    height: 35px;
+    background-color: black;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
+@media only screen and (min-width: 468px) { /*===================================================*/
+
+                    /* ========================================================= */
+                    /* |            H E A D E R        S T Y L E S             | */
+                    /* ========================================================= */
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top-links li,
+    .architects {
+        display: inline;
+        font-weight: normal;
+    }
+
+    .top-links a {
+        text-decoration: none;
+        color: black;    
+        font-size: .8rem;
+        letter-spacing: 1px;
+        margin-right: .5rem
+    }    
+
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) { /*=================================================*/
 
                     /* ========================================================= */
                     /* |            H E A D E R        S T Y L E S             | */
                     /* ========================================================= */
 
-    .nav-menu a {
-        font-size: 1.5rem;
-        margin-left: 2rem;
+    .top-links a {
+        font-size: 1rem;
+        letter-spacing: 4px;
+        margin-right: 2rem
     }
 
-    .logo a {
-        font-size: 2rem;
-    }
+                    /* ======================= H E R O ========================= */
 
     .hero {
-        height: 300px;
+        height: 295px;
+        margin-top: 3.3rem;
     }
 
-    .branding {
-        width: 125px;
+    .hero h1 {
+        top: 120px;
+        left: 130px;
     }
 
-    .branding i {
-        font-size: 7rem;
-    }
-
-    h1 {
-        font-size: 2rem;
+    .architects {
+        margin-left: 1rem;
     }
 
                     /* ========================================================= */
                     /* |                M A I N        S T Y L E S             | */
                     /* ========================================================= */
 
-    .sites {
+    .projects,
+    .house-link {
+        flex-basis: 48.5%;
+    }
+
+
+                    /* =================== P R O J E C T S ===================== */
+
+    #projects {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        align-items: center;
     }
 
-    .sites a {
-        flex-basis: 48%;
-    }
 
-    .photo {
-        width: 30%;
-        margin: 0 auto;
+                    /* ====================== A B O U T ======================== */
+
+    #about {
         display: flex;
-        justify-content: center;
+        flex-flow: row wrap;
+        justify-content: space-between;
     }
 
-    textarea {
-        height: 200px;
-    }
-
-    .bounce {
-        width: 85%;
-        margin: 0 auto;
-    }
-
-    .bounce img {
-        margin-bottom: -.1rem;
-    }
 }
 
-@media only screen and (min-width: 1280px) {
-    
-    .sites a {
+@media only screen and (min-width: 960px) {/*==================================================*/
+
+                    /* ========================================================= */
+                    /* |            H E A D E R        S T Y L E S             | */
+                    /* ========================================================= */
+
+    .hero {
+        height: 455px;
+    }
+
+    .hero h1 {
+        left: 290px;
+        top: 190px;
+    }
+
+                    /* ========================================================= */
+                    /* |                M A I N        S T Y L E S             | */
+                    /* ========================================================= */
+
+    .profile,
+    .house-link {
+        flex-basis: 49%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) { /*================================================*/
+                    /* ========================================================= */
+                    /* |            H E A D E R        S T Y L E S             | */
+                    /* ========================================================= */
+
+    .hero {
+        height: 630px;
+    }
+
+    .hero h1 {
+        top: 280px;
+        left: 450px;
+    }
+
+                    /* ========================================================= */
+                    /* |                M A I N        S T Y L E S             | */
+                    /* ========================================================= */
+    .profile,
+    .house-link {
         flex-basis: 24%;
     }
 
-    textarea {
-        height: 300px;
-    }
-
-    .bounce {
-        width: 48%;
-        margin: 0 auto;
-    }
-
-    .bounce img {
-        margin-bottom: -.5rem;
-    }
-
 }
+
+
+
+
+
+
+
+
+
+
+
